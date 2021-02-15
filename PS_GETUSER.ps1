@@ -1,2 +1,2 @@
-$resulttest = Get-ADUser -Filter * -Properties EmailAddress | where -Property EmailAddress -like ì*@toyota-t.ruî
+$resulttest = Get-ADUser -Filter * -Properties EmailAddress | where -Property EmailAddress -like ‚Äú*@tttt.tt‚Äù
 $resulttest | where -Property Enabled -like "*true*" | select -Property Name, EmailAddress, enabled| Export-Csv -Path Z:\Vivod\UserVKL.csv -Encoding Unicode -NoTypeInformation
